@@ -1,0 +1,22 @@
+SINGLE SIGN ON USING FELLOWSHIP ONE API
+
+By @TracyMazelin with thanks to @ChrisVaughn for his contributions
+
+
+This script allows Churches who use the Fellowship One Church Management System to authenticate their website users against the weblink and/or infellowship username and password credentials.
+
+It is designed to be used on a church website to allow a single sign on solution to each of the Fellowship One weblink modules.
+
+Usernames and passwords are authenticated via the API and data points are retrived back for use within the church site.
+
+These fields include:
+
+firstName
+lastName
+personID
+iCode
+
+The iCode can be concatenated to the weblink url to provide seemless access to online giving, profile editing, event registrations, and volunteer management.
+
+For more information and instrutions on use, see:
+https://developer.fellowshipone.com/index.php/blog/building_a_custom_login_for_your_church_website_using_the_api/
