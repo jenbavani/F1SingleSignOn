@@ -7,7 +7,7 @@ This script allows Churches who use the Fellowship One Church Management System 
 
 It is designed to be used on a church website to allow a single sign on solution to each of the Fellowship One weblink modules.
 
-Usernames and passwords are authenticated via the API and data points are retrived back for use within the church site.
+Usernames and passwords are authenticated via the API and data points are retrieved back for use within the church site.
 
 These fields include:
 
