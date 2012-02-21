@@ -27,16 +27,16 @@ $apiConsumer = new OAuthClient(AppConfig::$base_url, AppConfig::$consumer_key, A
   //Here we are drilling through the response headers to get the person location 
 $responseHeaders = $apiConsumer->getResponseHeader();
   foreach ($responseHeaders as $val) {
-  $start = 'Content-Location:';
-  $contentLocation =  substr( $val, 0, 17 );
-	if ($contentLocation == $start) {
-	$personLocation = str_replace($start, "", $val);
-	  if( $contentLocation == $start ) {
-	  $personLocation = str_replace($start, "", $val); 
-	  $_SESSION['personurl'] = trim($personLocation); 
-	  }
-	}
-  }
+  	$start = 'Content-Location:';
+  	$contentLocation =  substr( $val, 0, 17 );
+		if ($contentLocation == $start) {
+			$personLocation = str_replace($start, "", $val);
+	  		if( $contentLocation == $start ) {
+	  			$personLocation = str_replace($start, "", $val); 
+	  			$_SESSION['personurl'] = trim($personLocation); 
+			}
+		}
+  	}
 } 
 $url = $_SESSION['personurl'].".json";
 //We want to get some fields from the API and store them in cookies for use within our site
