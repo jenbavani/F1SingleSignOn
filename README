@@ -5,8 +5,8 @@ By @TracyMazelin with thanks to @ChrisVaughn for his contributions
 
 This script allows Churches who use the Fellowship One Church Management System to authenticate their website users against the weblink and/or infellowship username and password credentials.
 
-It is designed to be used on a church website to allow a single sign on solution to each of the Fellowship One weblink modules.
-
+It is designed to be used on a church website to allow congregants to login to a private member area of the website without the church having to separately store the credentials.  
+ 
 Usernames and passwords are authenticated via the API and data points are retrieved back for use within the church site.
 
 These fields include:
@@ -14,9 +14,7 @@ These fields include:
 firstName
 lastName
 personID
-iCode
-
-The iCode can be concatenated to the weblink url to provide seemless access to online giving, profile editing, event registrations, and volunteer management.
+etc
 
 For more information and instrutions on use, see:
 https://developer.fellowshipone.com/index.php/blog/building_a_custom_login_for_your_church_website_using_the_api/
